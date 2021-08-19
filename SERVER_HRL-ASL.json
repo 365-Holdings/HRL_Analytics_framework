@@ -1,0 +1,276 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2021-08-19 13:25:12",
+    "containerVersion": {
+        "path": "accounts/4702886441/containers/49566297/versions/0",
+        "accountId": "4702886441",
+        "containerId": "49566297",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/4702886441/containers/49566297",
+            "accountId": "4702886441",
+            "containerId": "49566297",
+            "name": "SERVER- hairrestorelabs.com ASL",
+            "publicId": "GTM-MPVMXDD",
+            "usageContext": [
+                "SERVER"
+            ],
+            "fingerprint": "1628257172605",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4702886441/containers/49566297/workspaces?apiLink=container"
+        },
+        "variable": [
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "variableId": "7",
+                "name": "FB Pixel ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "1786511278040806"
+                    }
+                ],
+                "fingerprint": "1628258752147",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "variableId": "8",
+                "name": "FB Conversions API Token",
+                "type": "c",
+                "notes": "How to generate this: https://knowledge.getelevar.com/how-to-create-facebook-conversion-api-token",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "EAAHOUQzePsABAGrQodLjGSgprwlWNdFoaU6K7EgduMs25ZCuHbew4nuHBMjekmSu3LktY1E5q8XljA9csBopE8LilZBYUZAJk2qU6UkJkbOkMUaUZAEXxTRVByArOI4tyf4UHvN4QTVy5WMTesJPX2aLDA1o2OBQVImsNF5P2xPoH7svkIw8"
+                    }
+                ],
+                "fingerprint": "1628258752148",
+                "parentFolderId": "6",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "variableId": "11",
+                "name": "GTM Web Container ID",
+                "type": "c",
+                "notes": "This is used for the GTM Proxy feature. Update with your WEB CONTAINER ID.\n\nhttps://knowledge.getelevar.com/gtm-proxy",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "GTM-P83SQKB"
+                    }
+                ],
+                "fingerprint": "1628258752150",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "folderId": "6",
+                "name": "Update After Importing",
+                "fingerprint": "1628258752146"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "folderId": "9",
+                "name": "Elevar / Facebook",
+                "fingerprint": "1628258752148"
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "type": "EVENT_NAME",
+                "name": "Event Name"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "type": "REQUEST_PATH",
+                "name": "Request Path"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "type": "REQUEST_METHOD",
+                "name": "Request Method"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "type": "CLIENT_NAME",
+                "name": "Client Name"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "type": "QUERY_STRING",
+                "name": "Query String"
+            }
+        ],
+        "fingerprint": "1629379512907",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4702886441/containers/49566297/versions/0?apiLink=version",
+        "customTemplate": [
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "templateId": "5",
+                "name": "Facebook Events API",
+                "fingerprint": "1628258752143",
+                "templateData": "___INFO___\n\n{\n  \"type\": \"CLIENT\",\n  \"id\": \"cvt_temp_public_id\",\n  \"version\": 1,\n  \"securityGroups\": [],\n  \"displayName\": \"Facebook Events API\",\n  \"brand\": {\n    \"id\": \"brand_dummy\",\n    \"displayName\": \"\"\n  },\n  \"description\": \"Handles the following events:\\nViewContent\\nAddToCart\\nViewContent\\nCustomizeProduct\\nSearch\\nCompleteRegistration\\nAddPaymentInfo\\nInitiateCheckout\\nPurchase\",\n  \"containerContexts\": [\n    \"SERVER\"\n  ]\n}\n\n\n___TEMPLATE_PARAMETERS___\n\n[\n  {\n    \"type\": \"SELECT\",\n    \"name\": \"facebookApiVersion\",\n    \"displayName\": \"Facebook API Version\",\n    \"macrosInSelect\": false,\n    \"selectItems\": [\n      {\n        \"value\": \"v8.0\",\n        \"displayValue\": \"v8.0\"\n      },\n      {\n        \"value\": \"v9.0\",\n        \"displayValue\": \"v9.0\"\n      },\n      {\n        \"value\": \"v10.0\",\n        \"displayValue\": \"v10.0\"\n      },\n      {\n        \"value\": \"v11.0\",\n        \"displayValue\": \"v11.0\"\n      },\n      {\n        \"value\": \"v12.0\",\n        \"displayValue\": \"v12.0\"\n      },\n      {\n        \"value\": \"v13.0\",\n        \"displayValue\": \"v13.0\"\n      }\n    ],\n    \"simpleValueType\": true,\n    \"defaultValue\": \"v10.0\"\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"facebookAccessToken\",\n    \"displayName\": \"Facebook Access Token\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"facebookPixelId\",\n    \"displayName\": \"Facebook Pixel Id\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"facebookTestCode\",\n    \"displayName\": \"Facebook Test Code\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"CHECKBOX\",\n    \"name\": \"debug\",\n    \"checkboxText\": \"Debug\",\n    \"simpleValueType\": true\n  },\n  {\n    \"type\": \"TEXT\",\n    \"name\": \"monitoringEndpoint\",\n    \"displayName\": \"Monitoring Endpoint\",\n    \"simpleValueType\": true,\n    \"help\": \"URL for sending monitoring events.\"\n  }\n]\n\n\n___SANDBOXED_JS_FOR_SERVER___\n\nconst claimRequest = require(\"claimRequest\");\nconst encodeUriComponent = require(\"encodeUriComponent\");\nconst getContainerVersion = require(\"getContainerVersion\");\nconst getCookieValues = require(\"getCookieValues\");\nconst getRemoteAddress = require(\"getRemoteAddress\");\nconst getRequestHeader = require(\"getRequestHeader\");\nconst getRequestPath = require(\"getRequestPath\");\nconst getRequestQueryParameters = require(\"getRequestQueryParameters\");\nconst getTimestampMillis = require(\"getTimestampMillis\");\nconst getType = require(\"getType\");\nconst JSON = require(\"JSON\");\nconst logToConsole = require(\"logToConsole\");\nconst makeString = require(\"makeString\");\nconst Math = require(\"Math\");\nconst returnResponse = require(\"returnResponse\");\nconst sendHttpGet = require(\"sendHttpGet\");\nconst sendHttpRequest = require(\"sendHttpRequest\");\nconst setCookie = require(\"setCookie\");\nconst setPixelResponse = require(\"setPixelResponse\");\nconst sha256Sync = require(\"sha256Sync\");\n\n/****************** UTILITIES ******************/\n\nconst log = args => {\n  if (data.debug) {\n    logToConsole(\"FB Events:\", args);\n  }\n};\n\nconst hash = str => sha256Sync(str.toLowerCase(), { outputEncoding: \"hex\" });\n\nconst getObjectKeys = object => {\n  let keys = [];\n  for (const name in object) {\n    keys.push(name);\n  }\n  return keys;\n};\n\nconst serialize = obj => {\n  let str = [];\n  for (const objKey in obj) {\n    if (obj[objKey] || obj[objKey] === 0) {\n      str.push(\n        encodeUriComponent(makeString(objKey)) +\n          \"=\" +\n          encodeUriComponent(makeString(obj[objKey]))\n      );\n    }\n  }\n  return str.join(\"&\");\n};\n\n/*************** END UTILITIES ****************/\n\n/************* HELPER FUNCTIONS ***************/\n\nconst refreshCookie = () => {\n  const fbCookie = getCookieValues(\"_fbc\")[0];\n  if (fbCookie) {\n    setCookie(\"_fbc\", fbCookie, {\n      domain: \"auto\",\n      path: \"/\",\n      \"max-age\": 60 * 60 * 24 * 30 * 3,\n      samesite: \"Lax\",\n      secure: false\n    });\n  }\n};\n\nconst getCustomData = params => {\n  const customData = {};\n  if (params.currency) customData.currency = params.currency;\n  if (params.order_id) customData.order_id = params.order_id;\n  if (params.value) customData.value = params.value;\n  if (params.num_items) customData.num_items = params.num_items;\n  if (params.contents) customData.contents = JSON.parse(params.contents);\n  if (params.content_type) customData.content_type = params.content_type;\n  return customData;\n};\n\nconst getUserData = params => {\n  const _fbc = getCookieValues(\"_fbc\")[0];\n  const _fbp = getCookieValues(\"_fbp\")[0];\n\n  const userData = {\n    client_ip_address: getRemoteAddress(),\n    client_user_agent: getRequestHeader(\"user-agent\"),\n    fbc: _fbc,\n    fbp: _fbp\n  };\n  if (params.email) userData.em = hash(params.email);\n  if (params.customer_id) userData.external_id = hash(params.customer_id);\n  if (params.phone) {\n    const phone = params.phone\n      .replace(\"-\", \"\")\n      .replace(\"(\", \"\")\n      .replace(\")\", \"\")\n      .replace(\"+\", \"\")\n      .replace(\" \", \"\");\n    userData.ph = hash(phone);\n  }\n  if (params.firstname) userData.fn = hash(params.firstname);\n  if (params.lastname) userData.ln = hash(params.lastname);\n  if (params.city) {\n    userData.ct = hash(params.city);\n  } else {\n    const city = getRequestHeader(\"X-Appengine-City\");\n    if (city) {\n      userData.ct = hash(city);\n    }\n  }\n  if (params.state) {\n    userData.st = hash(params.state);\n  } else {\n    const region = getRequestHeader(\"X-Appengine-Region\");\n    if (region) {\n      userData.st = hash(region);\n    }\n  }\n  if (params.country) {\n    userData.country = hash(params.country);\n  } else {\n    const country = getRequestHeader(\"X-Appengine-Country\");\n    if (country) {\n      userData.country = hash(country);\n    }\n  }\n  return userData;\n};\n\nconst getInvalidParams = fbParams => {\n  const required = [\"event_name\", \"event_time\", \"user_data\", \"action_source\"];\n  const missing = required.filter(key => !fbParams[key]);\n  if (missing.length > 0)\n    return \"missing parameters: \" + JSON.stringify(missing);\n\n  if (\n    fbParams.event_name === \"Purchase\" ||\n    fbParams.event_name === \"SubscriptionPurchase\"\n  ) {\n    if (!fbParams.custom_data.currency)\n      return \"custom_data.currency required for Purchase\";\n  }\n\n  if (getType(fbParams.custom_data.contents) === \"array\") {\n    if (\n      fbParams.custom_data.content_type === \"product\" &&\n      fbParams.custom_data.contents.length !== 1\n    ) {\n      return \"custom_data.contents should have one item with content_type product\";\n    }\n    for (let i = 0; i < fbParams.custom_data.contents.length; i++) {\n      let item = fbParams.custom_data.contents[i];\n      if (!item[\"id\"] || !item[\"quantity\"] || !item[\"item_price\"]) {\n        return \"custom_data.contents missing id, quantity, or item_price\";\n      }\n    }\n  }\n\n  if (fbParams.event_name !== \"InitiateCheckout\") {\n    if (fbParams.custom_data.num_items) {\n      return \"custom_data.num_items only valid for InitiateCheckout\";\n    }\n  }\n};\n\nconst getEventName = params => {\n  if (params.event_name === \"SubscriptionPurchase\") {\n    return \"Purchase\";\n  }\n  return params.event_name;\n};\nconst hasLDUEnabled = () => {\n  return getCookieValues(\"ccpaoptin\")[0];\n};\n\nconst getBody = params => {\n  let body = {\n    event_name: getEventName(params),\n    action_source: \"website\",\n    event_time: Math.floor(getTimestampMillis() / 1000),\n    event_id: params.event_id,\n    event_source_url: params.source,\n    user_data: getUserData(params),\n    custom_data: getCustomData(params),\n    opt_out: params.consent === \"no\" ? true : false\n  };\n\n  if (hasLDUEnabled()) {\n    body.data_processing_options = [\"LDU\"];\n    body.data_processing_options_country = 1;\n    body.data_processing_options_state = 1000;\n  }\n  return body;\n};\n\nconst getPostUrl = () => {\n  return (\n    \"https://graph.facebook.com/\" +\n    data.facebookApiVersion +\n    \"/\" +\n    data.facebookPixelId +\n    \"/events?access_token=\" +\n    data.facebookAccessToken\n  );\n};\n\nconst encodePostBody = params => {\n  return (\n    \"data=\" +\n    encodeUriComponent(JSON.stringify([getBody(params)])) +\n    (params.test_code ? \"&test_event_code=\" + params.test_code : \"\")\n  );\n};\n\nconst sendFbRequest = params => {\n  const body = getBody(params);\n  sendHttpRequest(\n    getPostUrl(),\n    (statusCode, headers, fbBody) => {\n      if (statusCode !== 200) {\n        log(\"Error from Facebook Conversions API: \" + fbBody);\n        logResult(params.ctid, JSON.parse(fbBody).error, body, false);\n      } else {\n        log(\"Successful response from Facebook Conversions API: \" + fbBody);\n        const invalidValuesMessage = getInvalidParams(body);\n        let error;\n        if (invalidValuesMessage) {\n          error = {\n            code: -1,\n            error_user_title: invalidValuesMessage\n          };\n        }\n        logResult(params.ctid, error, body, true);\n      }\n    },\n    {\n      headers: { content_type: \"application/x-www-form-urlencoded\" },\n      method: \"POST\",\n      timeout: 5000\n    },\n    encodePostBody(params)\n  );\n};\n\nconst shouldSendSubscribeEvent = params => {\n  return params.event_name === \"SubscriptionPurchase\" && params.subscribe;\n};\n\n/*********** END HELPER FUNCTIONS *************/\n\n/************* MONITORING FUNCTIONS ***************/\n\nconst getBaseLoggingData = (\n  webClientId,\n  errorResponse,\n  fbBodySent,\n  successful\n) => {\n  const containerVersion = getContainerVersion();\n  const queryParams = getRequestQueryParameters();\n  const params = {\n    successful: successful ? \"1\" : \"0\",\n    ss_client_id: containerVersion[\"containerId\"],\n    web_client_id: webClientId,\n    channel: \"Facebook\",\n    event_name: fbBodySent.event_name,\n    page_url: fbBodySent.event_source_url,\n    /** @todo Double check this situation. Revisit when web container passes in consent. **/\n    consent: fbBodySent.opt_out === false ? \"yes\" : \"no\"\n  };\n\n  if (queryParams.utm_source) params.utm_source = queryParams.utm_source;\n  if (queryParams.utm_medium) params.utm_medium = queryParams.utm_medium;\n  if (queryParams.utm_campaign) params.utm_campaign = queryParams.utm_campaign;\n  if (queryParams.utm_term) params.utm_term = queryParams.utm_term;\n  if (queryParams.utm_content) params.utm_content = queryParams.utm_content;\n  if (queryParams.fbclid) params.fbclid = queryParams.fbclid;\n  if (queryParams.customer_order_count)\n    params.customer_order_count = queryParams.customer_order_count;\n  if (queryParams.customer_total_spent)\n    params.customer_total_spent = queryParams.customer_total_spent;\n\n  if (fbBodySent.custom_data) {\n    params.order_id = fbBodySent.custom_data.order_id;\n    params.revenue = fbBodySent.custom_data.value;\n    params.currency = fbBodySent.custom_data.currency;\n  }\n  if (errorResponse) {\n    params.error_code = errorResponse.error_subcode || errorResponse.code;\n    params.error_message =\n      errorResponse.error_user_title || errorResponse.message;\n    params.attempted_request = JSON.stringify(fbBodySent);\n  }\n  return params;\n};\n\nconst createLoggingUrl = (\n  webClientId,\n  errorResponse,\n  fbBodySent,\n  successful\n) => {\n  const params = getBaseLoggingData(\n    webClientId,\n    errorResponse,\n    fbBodySent,\n    successful\n  );\n  return data.monitoringEndpoint + \"?\" + serialize(params);\n};\n\nconst logResult = (webClientId, errorResponse, fbBodySent, successful) => {\n  if (!data.monitoringEndpoint) return;\n  sendHttpGet(\n    createLoggingUrl(webClientId, errorResponse, fbBodySent, successful),\n    (statusCode, __, ___) => {},\n    {\n      method: \"GET\",\n      timeout: 5000\n    }\n  );\n};\n\n/*********** END MONITORING FUNCTIONS *************/\n\nconst params = getRequestQueryParameters();\nif (\n  getRequestPath().indexOf(\"/efbc.gif\") === 0 &&\n  getObjectKeys(params).length > 0\n) {\n  claimRequest();\n\n  log(\"Params from url:\" + JSON.stringify(params));\n\n  log(\"Sending body object to FB: \" + JSON.stringify(getBody(params)));\n\n  refreshCookie();\n\n  sendFbRequest(params);\n\n  if (shouldSendSubscribeEvent(params)) {\n    let subscribeParams = getRequestQueryParameters();\n    subscribeParams.event_name = \"Subscribe\";\n    subscribeParams.event_id = \"sub_\" + subscribeParams.event_id;\n    log(\n      \"Sending body object to FB: \" + JSON.stringify(getBody(subscribeParams))\n    );\n    sendFbRequest(subscribeParams);\n  }\n\n  setPixelResponse();\n  returnResponse();\n}\n\n\n___SERVER_PERMISSIONS___\n\n[\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_request\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"requestAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        },\n        {\n          \"key\": \"headerAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        },\n        {\n          \"key\": \"queryParameterAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"get_cookies\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"cookieAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"return_response\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"logging\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"environments\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"all\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"access_response\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"writeResponseAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        },\n        {\n          \"key\": \"writeHeaderAccess\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"specific\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"send_http\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedUrls\",\n          \"value\": {\n            \"type\": 1,\n            \"string\": \"any\"\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"read_container_data\",\n        \"versionId\": \"1\"\n      },\n      \"param\": []\n    },\n    \"isRequired\": true\n  },\n  {\n    \"instance\": {\n      \"key\": {\n        \"publicId\": \"set_cookies\",\n        \"versionId\": \"1\"\n      },\n      \"param\": [\n        {\n          \"key\": \"allowedCookies\",\n          \"value\": {\n            \"type\": 2,\n            \"listItem\": [\n              {\n                \"type\": 3,\n                \"mapKey\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"name\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"domain\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"path\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"secure\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"session\"\n                  }\n                ],\n                \"mapValue\": [\n                  {\n                    \"type\": 1,\n                    \"string\": \"_fbc\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"*\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"any\"\n                  },\n                  {\n                    \"type\": 1,\n                    \"string\": \"any\"\n                  }\n                ]\n              }\n            ]\n          }\n        }\n      ]\n    },\n    \"clientAnnotations\": {\n      \"isEditedByUser\": true\n    },\n    \"isRequired\": true\n  }\n]\n\n\n___TESTS___\n\nscenarios: []\n\n\n___NOTES___\n\nCreated on 1/15/2021, 1:22:19 PM\n\n\n"
+            }
+        ],
+        "client": [
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "clientId": "1",
+                "name": "Universal Analytics",
+                "type": "ua_client",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateDefaultPaths",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieManagement",
+                        "value": "server"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieName",
+                        "value": "FPID"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookiePath",
+                        "value": "/"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieMaxAgeInSec",
+                        "value": "63072000"
+                    }
+                ],
+                "fingerprint": "1628257172610"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "clientId": "2",
+                "name": "GA4",
+                "type": "gaaw_client",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "activateDefaultPaths",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieManagement",
+                        "value": "server"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieName",
+                        "value": "FPID"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookiePath",
+                        "value": "/"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieMaxAgeInSec",
+                        "value": "63072000"
+                    }
+                ],
+                "fingerprint": "1628257172610"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "clientId": "10",
+                "name": "Facebook Events",
+                "type": "cvt_49566297_5",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "debug",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "facebookPixelId",
+                        "value": "{{FB Pixel ID}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "facebookAccessToken",
+                        "value": "{{FB Conversions API Token}}"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "facebookApiVersion",
+                        "value": "v11.0"
+                    }
+                ],
+                "fingerprint": "1628258752149",
+                "parentFolderId": "9",
+                "notes": "This is our latest version as of March 1st 2021. Please follow this guide:\n\nhttps://knowledge.getelevar.com/how-to-configure-facebook-conversion-api"
+            },
+            {
+                "accountId": "4702886441",
+                "containerId": "49566297",
+                "clientId": "12",
+                "name": "Google Tag Manager Web Container Proxy",
+                "type": "gtm_client",
+                "parameter": [
+                    {
+                        "type": "LIST",
+                        "key": "allowedContainerIds",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "containerId",
+                                        "value": "{{GTM Web Container ID}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1628258752152"
+            }
+        ]
+    }
+}
